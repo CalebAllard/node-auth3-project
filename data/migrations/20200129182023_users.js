@@ -6,11 +6,11 @@ exports.up = function(knex) {
     tbl.text('username',225)
         .notNullable();
     tbl.text('password')
-        .notNullable();
+        
     tbl.text('department');
   });
 };
 
 exports.down = function(knex) {
- return knex.schema.dropTableIfExisits('users');
+ return knex.schema.dropTableIfExists('users');
 };
