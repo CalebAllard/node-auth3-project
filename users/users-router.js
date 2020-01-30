@@ -4,7 +4,7 @@ const restricted = require('../auth/restricted-middleware');
 const Users = require('./users-model');
 
 router.get('/',restricted,(req,res) => {
-    Users.find()
+    Users.findBy()
         .then(ret => {
             res.status(200).json(ret);
         })
