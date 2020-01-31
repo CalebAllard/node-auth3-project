@@ -1,0 +1,40 @@
+{
+  "name": "auth3-project",
+  "version": "1.0.0",
+  "description": "- Authentication.\r - Express Middleware.\r - JSON Web Tokens (JWTs).\r - Hashing Passwords.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "run": "node index.js",
+    "test": "cross-env DB_ENV=testing jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebAllard/node-auth3-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebAllard/node-auth3-project/issues"
+  },
+  "homepage": "https://github.com/CalebAllard/node-auth3-project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.8",
+    "knex-cleaner": "^1.3.0",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "Jest": {
+    "testEnvironment": "node"
+  }
+}
